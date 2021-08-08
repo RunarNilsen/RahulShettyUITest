@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-08T16:16:34.509Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6175760000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.uitest.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Check sum of Amount column",
+        "description": "",
+        "id": "web-tables;check-sum-of-amount-column",
+        "after": [
+          {
+            "result": {
+              "duration": 215340000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.uitest.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7795315000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "navigate to the homepage",
+            "match": {
+              "location": "com.uitest.step_definitions.WebTableStepDefinitions.navigate_to_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 723386000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "sum the Amount Column",
+            "match": {
+              "location": "com.uitest.step_definitions.WebTableStepDefinitions.sum_the_Amount_Column()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 393457000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "It should be same with the amount of Total Amount Collected",
+            "match": {
+              "location": "com.uitest.step_definitions.WebTableStepDefinitions.it_should_be_same_with_the_amount_of_Total_Amount_Collected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Web Tables",
+    "description": "",
+    "id": "web-tables",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/WebTable.feature",
+    "tags": []
+  }
+]]
