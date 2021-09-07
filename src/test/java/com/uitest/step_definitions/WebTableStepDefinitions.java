@@ -11,6 +11,7 @@ import org.junit.Assert;
 import java.util.List;
 
 public class WebTableStepDefinitions {
+    int sumOfAmount;
 
     @Given("navigate to the homepage")
     public void navigate_to_the_homepage() {
@@ -28,13 +29,12 @@ public class WebTableStepDefinitions {
     @When("sum the Amount Column")
     public void sum_the_Amount_Column() {
         WebTablePage webTablePage = new WebTablePage();
-        int sumOfAmount = webTablePage.sumOfFixedTableAmounts(webTablePage.fixedTableAmounts);
+        sumOfAmount = webTablePage.sumOfFixedTableAmounts(webTablePage.fixedTableAmounts);
     }
 
     @Then("It should be same with the amount of Total Amount Collected")
     public void it_should_be_same_with_the_amount_of_Total_Amount_Collected() {
         WebTablePage webTablePage = new WebTablePage();
-        int sumOfAmount = webTablePage.sumOfFixedTableAmounts(webTablePage.fixedTableAmounts);
         int totalAmount = webTablePage.getTheAmountFromTotalAmountText();
         Assert.assertEquals(sumOfAmount, totalAmount);
     }
